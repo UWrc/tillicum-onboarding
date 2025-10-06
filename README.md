@@ -27,14 +27,14 @@ Each topic in this tutorial is contained in its own Markdown file for easy navig
 
 | Section                                      | Description                                                         |
 | -------------------------------------------- | ------------------------------------------------------------------- |
-| [**<ins>01-vpn.md</ins>**](./01-VPN.md)                     | Connecting to the UW VPN (required for Open OnDemand)               |
-| [**<ins>02-logging-in.md</ins>**](./02-Logging-in.md)       | How to log in via SSH                             |
-| [**<ins>03-filesystem.md</ins>**](./03-Filesystem.md)       | Understanding Tillicum filesystem, storage, and best practices                   |
-| [**<ins>04-slurm.md</ins>**](./04-Slurm.md)                 | Submitting, monitoring, and managing jobs                           |
-| [**<ins>05-modules.md</ins>**](./05-Modules.md)             | Using LMOD to load software modules                                 |
-| [**<ins>06-computing-env.md</ins>**](./06-Computing-env.md) | Setting up Conda environments                         |
-| [**<ins>07-ood-jupyter.md</ins>**](./07-OOD-Jupyter.md)     | Running Jupyter notebooks via Open OnDemand                         |
-| [**<ins>08-globus.md</ins>**](./08-Globus.md)               | Transferring data using Globus (installing Globus Connect Personal) |
+| [**<ins>01-vpn.md</ins>**](./01-vpn.md)                     | Connecting to the UW VPN (required for Open OnDemand)               |
+| [**<ins>02-logging-in.md</ins>**](./02-logging-in.md)       | How to log in via SSH                             |
+| [**<ins>03-filesystem.md</ins>**](./03-filesystem.md)       | Understanding Tillicum filesystem, storage, and best practices                   |
+| [**<ins>04-slurm.md</ins>**](./04-slurm.md)                 | Submitting, monitoring, and managing jobs                           |
+| [**<ins>05-modules.md</ins>**](./05-modules.md)             | Using LMOD to load software modules                                 |
+| [**<ins>06-computing-env.md</ins>**](./06-computing-env.md) | Setting up Conda environments                         |
+| [**<ins>07-ood-jupyter.md</ins>**](./07-ood-jupyter.md)     | Running Jupyter notebooks via Open OnDemand                         |
+| [**<ins>08-globus.md</ins>**](./08-globus.md)               | Transferring data using Globus (installing Globus Connect Personal) |
 
 ## Introduction video
 
