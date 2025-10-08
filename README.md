@@ -16,11 +16,11 @@ By completing this tutorial, you’ll learn how to:
 * Connect to the UW VPN
 * Log in and access Tillicum resources
 * Navigate the filesystem and manage data
+* Transfer data with scp and Globus
 * Submit and monitor jobs with Slurm
 * Load and manage software modules
 * Use Conda computing environments
 * Launch Jupyter notebooks through Open OnDemand
-* Transfer data with Globus
 
 ## Repository Structure
 Each topic in this tutorial is contained in its own Markdown file for easy navigation:
@@ -30,11 +30,12 @@ Each topic in this tutorial is contained in its own Markdown file for easy navig
 | [**<ins>01-vpn.md</ins>**](./01-vpn.md)                     | Connecting to the UW VPN (required for Open OnDemand)               |
 | [**<ins>02-logging-in.md</ins>**](./02-logging-in.md)       | How to log in via SSH                             |
 | [**<ins>03-filesystem.md</ins>**](./03-filesystem.md)       | Understanding Tillicum filesystem, storage, and best practices                   |
-| [**<ins>04-slurm.md</ins>**](./04-slurm.md)                 | Submitting, monitoring, and managing jobs                           |
+| [**<ins>04-file-transfer.md</ins>**](./04-file-transfer.md)               | Transferring data using Globus (installing Globus Connect Personal) |
+| [**<ins>05-slurm.md</ins>**](./05-slurm.md)                 | Submitting, monitoring, and managing jobs                           |
 | [**<ins>05-modules.md</ins>**](./05-modules.md)             | Using LMOD to load software modules                                 |
 | [**<ins>06-computing-env.md</ins>**](./06-computing-env.md) | Setting up Conda environments                         |
 | [**<ins>07-ood-jupyter.md</ins>**](./07-ood-jupyter.md)     | Running Jupyter notebooks via Open OnDemand                         |
-| [**<ins>08-globus.md</ins>**](./08-globus.md)               | Transferring data using Globus (installing Globus Connect Personal) |
+
 
 ## Introduction video
 
