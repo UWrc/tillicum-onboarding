@@ -2,7 +2,7 @@
 
 Tillicum provides JupyterLab and Jupyter Notebook access through [Open OnDemand (OOD)](https://tillicum-ood.hyak.uw.edu/).
 
-> 📝 **_NOTE:_** UW VPN is required to access OOD if you are off-campus.
+> 📝 **NOTE:** UW VPN is required to access OOD if you are off-campus.
 
 This interface allows you to run interactive Jupyter sessions in the `$Home` directory on compute nodes without manually submitting Slurm jobs.
 
@@ -81,7 +81,7 @@ This creates a Jupyter kernel entry visible in Jupyter notebook. Any packages in
 - `--name`: internal environment name
 - `--display-name`: name shown in JupyterLab
 
-> 💡 **_TIP:_** Containers can also be registered as Jupyter kernels.
+> 💡 **TIP:** Containers can also be registered as Jupyter kernels.
 
 **Step 3: Launch A Jupyter Notebook**
 
@@ -97,9 +97,9 @@ Inside a notebook, go to **Kernel** > **Change Kernel** to switch kernels in the
 
 ![switch-kernel](/img/switch_kernel.png "Switch kernels in a Jupyter notebook")
 
-> 💡 **_TIP:_** If your custom kernel doesn't appear, restart the Jupyter session after running the `ipykernel install` command.
+> 💡 **TIP:** If your custom kernel doesn't appear, restart the Jupyter session after running the `ipykernel install` command.
 
-## Close the session
+## Close the Session
 
 When you finish:
 
@@ -107,4 +107,4 @@ When you finish:
 2. Return to OOD and click **Delete** on your running session card.
 3. The compute resources will be released back to the cluster.
 
-> ⚠️ **_WARNING:_** Leaving sessions running consumes GPU hours and counts toward your project usage.
+> ⚠️ **WARNING:** Leaving sessions running consumes GPU hours and counts toward your project usage.

@@ -61,7 +61,7 @@ conda env list
 
 Now your custom Conda environment is active and you can install additional packages using `conda install`. Conda has several default channels that will be used first for package installation. If you want to use another channel beyond the defaults channel, you can, but we suggest that you select your channel carefully.
 
-> ⚠️ **_WARNING:_** By default, the system Conda stores environments in your home directory ($HOME/.conda/envs). We recommend installing Conda environments to your **project directory** under `/gpfs/<myproject>/<myfolder>` (see instructions below) due to the limited storage space (10 GB) in your home directory.
+> ⚠️ **WARNING:** By default, the system Conda stores environments in your home directory ($HOME/.conda/envs). We recommend installing Conda environments to your **project directory** under `/gpfs/<myproject>/<myfolder>` (see instructions below) due to the limited storage space (10 GB) in your home directory.
 
 Remove an environment:
 
@@ -117,4 +117,4 @@ Tillicum supports Apptainer containers for running portable, reproducible softwa
 
 We will hold separate, hands-on training sessions for building and running containers on Tillicum. 
 
-> 🗓️ **_Stay Tuned:_** Check our [Research Computing Calendar](https://calendar.washington.edu/sea_uwit-rc) for upcoming training events.
+> 🗓️ **Stay Tuned:** Check our [Research Computing Calendar](https://calendar.washington.edu/sea_uwit-rc) for upcoming training events.

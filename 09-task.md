@@ -5,7 +5,7 @@ This hands-on exercise will guide you through the essential steps for using Till
 
 You’ll create a working directory, start an interactive job, load modules, build a Conda environment, run Python code, submit a batch job, and finally connect that environment to Jupyter Notebook.
 
-> 🎯 **_GOAL:_** Learn how to build and run a simple workflow on Tillicum — from terminal to Jupyter.
+> 🎯 **GOAL:** Learn how to build and run a simple workflow on Tillicum — from terminal to Jupyter.
 
 **Overview**
 
@@ -29,11 +29,11 @@ cd /gpfs/scrubbed/$USER
 git clone https://github.com/UWrc/tillicum-onboarding.git
 ```
 
-> 📝 **_NOTE:_** The `$USER` variable automatically expands to your username.
+> 📝 **NOTE:** The `$USER` variable automatically expands to your username.
 
 ## 1. Start an Interactive Job
 
-> ⚠️ **_WARNING:_** All compute work must run on compute nodes — **never** on the login node.
+> ⚠️ **WARNING:** All compute work must run on compute nodes — **never** on the login node.
 
 Request an interactive session with 1 GPU for 1 hour:
 
@@ -99,6 +99,7 @@ You'll see the full path such as `/gpfs/scrubbed/$USER/myenv/bin/python`, and `p
 A simple demo script `tillicum_demo.py` is provided in the training repository. Run it as follows:
 
 ```bash
+cd /gpfs/scrubbed/$USER/tillicum-onboarding
 python tillicum_demo.py 2>/dev/null
 ```
 
@@ -133,9 +134,9 @@ A template job script is included in the training repository. Review and update 
 nano tillicum_demo.slurm
 ```
 
-> 📝 **_NOTE:_** Update the `conda activate` path in the script to match your actual environment path. Use `pwd` in your environment directory to find out the full path.
+> 📝 **NOTE:** Update the `conda activate` path in the script to match your actual environment path `/gpfs/scrubbed/$USER/myenv`.
 
-> 💡 **_TIP:_** `#SBATCH --output=tillicum_demo_%j.out` redirect both standard output (`stdout`) and standard error (`stderr`)to the file specified `tillicum_demo_%j.out`, where %j is the job ID allocated.
+> 💡 **TIP:** `#SBATCH --output=tillicum_demo_%j.out` redirect both standard output (`stdout`) and standard error (`stderr`)to the file specified `tillicum_demo_%j.out`, where %j is the job ID allocated.
 
 Submit a batch job:
 
@@ -175,7 +176,7 @@ Register your environment as a Jupyter kernel:
 python -m ipykernel install --user --name myenv --display-name "Python (Tillicum Demo)"
 ```
 
-> 💡 **_TIP:_** You only need to register each environment once.
+> 💡 **TIP:** You only need to register each environment once.
 
 ## 6. Launch JupyterLab from Open OnDemand
 
@@ -225,7 +226,7 @@ When finished:
 
 This release compute resources back to the cluster.
 
-> ⚠️ **_WARNING:_** Leaving sessions running consumes GPU hours and counts toward your project usage.
+> ⚠️ **WARNING:** Leaving sessions running consumes GPU hours and counts toward your project usage.
 
 To remove your temporary environment later, run from a terminal on Tillicum:
 
@@ -234,4 +235,4 @@ module load conda
 conda env remove --prefix /gpfs/scrubbed/$USER/myenv
 ```
 
-> 📝 **_NOTE:_** Make sure your environment is *deactivated* before removing it.
+> 📝 **NOTE:** Make sure your environment is *deactivated* before removing it.

@@ -41,7 +41,7 @@ The module command sets the appropriate environment variable independent of your
 
 Lmod provides a convenient shortcut command [`ml`](https://lmod.readthedocs.io/en/latest/010_user.html#ml-a-convenient-tool) for the `module` command.
 
-> 💡 **_TIP:_** `ml` can be used instead of module, module load, or module list depending on the situation. This can be seen in the examples below.
+> 💡 **TIP:** `ml` can be used instead of module, module load, or module list depending on the situation. This can be seen in the examples below.
 
 | Example | Equivalent|
 |:-----|:-----|
@@ -133,7 +133,7 @@ accelerated applications. The toolkit includes GPU-accelerated libraries, debugg
 
 The above output also indicates a modulefile's complete name includes its name and version. An installed application can have several versions. `module spider cuda/13.0.0` also illustrates that `gcc/13.4.0` needs to be loaded at first before `cuda/13.0.0` is available to load.
 
-> 📝 **_NOTE:_** `module spider` is the most reliable way to see all installed software and learn what prerequisites must be loaded first. **Always use `module spider` instead of `module avail` to find out how to `module load`.**
+> 📝 **NOTE:** `module spider` is the most reliable way to see all installed software and learn what prerequisites must be loaded first. **Always use `module spider` instead of `module avail` to find out how to `module load`.**
 
 ## Module Hierarchies
 
@@ -209,7 +209,7 @@ The following have been reloaded with a version change:
   1) cuda/12.9.1 => cuda/12.4.0     2) gcc/13.4.0 => gcc/11.5.0
 ```
 
-> ⚠️ **_WARNING:_** Do not include `module load` commands in your startup files (e.g., $HOME/.bashrc and $HOME/.bash_profile). This can cause conflicts when switching environments in batch jobs or interactively.
+> ⚠️ **WARNING:** Do not include `module load` commands in your startup files (e.g., $HOME/.bashrc and $HOME/.bash_profile). This can cause conflicts when switching environments in batch jobs or interactively.
 
 ## User Collections (Optinonal)
 
