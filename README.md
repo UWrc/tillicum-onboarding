@@ -32,9 +32,10 @@ Each topic in this tutorial is contained in its own Markdown file for easy navig
 | [**<ins>03-filesystem.md</ins>**](./03-filesystem.md)       | Understanding Tillicum filesystem, storage, and best practices                   |
 | [**<ins>04-file-transfer.md</ins>**](./04-file-transfer.md)               | Transferring data using Globus (installing Globus Connect Personal) |
 | [**<ins>05-slurm.md</ins>**](./05-slurm.md)                 | Submitting, monitoring, and managing jobs                           |
-| [**<ins>05-modules.md</ins>**](./05-modules.md)             | Using LMOD to load software modules                                 |
-| [**<ins>06-computing-env.md</ins>**](./06-computing-env.md) | Setting up Conda environments                         |
-| [**<ins>07-ood-jupyter.md</ins>**](./07-ood-jupyter.md)     | Running Jupyter notebooks via Open OnDemand                         |
+| [**<ins>06-modules.md</ins>**](./06-modules.md)             | Using LMOD to load software modules                                 |
+| [**<ins>07-computing-env.md</ins>**](./07-computing-env.md) | Setting up Conda environments                         |
+| [**<ins>08-ood-jupyter.md</ins>**](./08-ood-jupyter.md)     | Running Jupyter notebooks via Open OnDemand                         |
+| [**<ins>09-task.md</ins>**](./09-task.md)     | Hands-on exercise                         |
 
 
 ## Introduction video
