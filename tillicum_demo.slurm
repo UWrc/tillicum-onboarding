@@ -8,6 +8,6 @@
 #SBATCH --output=tillicum_demo_%j.out
 
 module load conda
-conda activate /gpfs/scrubbed/$USER/myenv
+conda activate myenv
 
 python tillicum_demo.py

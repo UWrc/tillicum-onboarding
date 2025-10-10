@@ -238,7 +238,7 @@ The first few lines of `loop_job.slurm` should look like this:
 #!/bin/bash
 
 #SBATCH --job-name=loop_job
-#SBATCH --QOS=normal
+#SBATCH --qos=normal
 #SBATCH --gpus=1
 #SBATCH --time=5:00
 #SBATCH -o %x_%j.out

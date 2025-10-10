@@ -20,7 +20,7 @@ $ echo $PATH
 
 ## Lmod
 
-Lmod is a Lua-based module system that provides a convenient way to dynamically change your environment (`PATH`, `LD_LIBRARY_PATH`, etc.) through modulefiles to use different software stacks. Lmod is an implementation of environment modules that easily handles the Hierarchical `MODULEPATH`.
+Lmod is a Lua-based module system that provides a convenient way to dynamically change your environment (`PATH`, `LD_LIBRARY_PATH`, etc.) through modulefiles to use different software stacks. Lmod is an implementation of environment modules that easily handles the hierarchical `MODULEPATH`.
 
 ## Command Summary
 
