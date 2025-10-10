@@ -59,6 +59,8 @@ If you see GPU details (e.g., NVIDIA H200 with driver and CUDA versions), you're
 
 ## 2. Load Conda Module and Create an Environment
 
+> ⚠️ **WARNING:** To install GPU-aware packages (TensorFlow in our case), always request a GPU node for the installation.
+
 List available modules and locate Conda:
 
 ```bash
@@ -72,17 +74,36 @@ Load the system Conda module:
 module load conda
 ```
 
-Create a Conda environment in your scrubbed directory (to avoid Home quota exceeded):
+To avoid Home disk quota exceeded, open the file `$HOME/.condarc`:
+
+```bash
+nano ~/.condarc
+```
+
+and edit it to include following lines:
+
+```yaml
+envs_dirs:
+  - /gpfs/scrubbed/<UW NetID>/conda/envs
+pkgs_dirs:
+  - /gpfs/scrubbed/<UW NetID>/conda/pkgs
+```
+
+Please replace <UW NetID> with your own UW NetID. Save (^O) and exit (^X) before continue in the shell.
+
+This will place all of your environments and package caches in the specified directories by default, and you won't have to worry about specifying the full prefix to your environment when installing it or activating it.
+
+Create a Conda environment in your scrubbed directory:
 
 ```bash
 # Rename "myenv" to anything you prefer.
-conda create --prefix /gpfs/scrubbed/$USER/myenv python=3.12 tensorflow
+conda create --name myenv python=3.12 tensorflow
 ```
 
 Activate the environment:
 
 ```bash
-conda activate /gpfs/scrubbed/$USER/myenv
+conda activate myenv
 ```
 
 Verify Python is ready in your environment:
@@ -134,7 +155,7 @@ A template job script is included in the training repository. Review and update 
 nano tillicum_demo.slurm
 ```
 
-> 📝 **NOTE:** Update the `conda activate` path in the script to match your actual environment path `/gpfs/scrubbed/$USER/myenv`.
+> 📝 **NOTE:** Update the `conda activate` environment name in the script to match your actual name. Save (^O) and exit (^X) before continue in the shell.
 
 > 💡 **TIP:** `#SBATCH --output=tillicum_demo_%j.out` redirect both standard output (`stdout`) and standard error (`stderr`)to the file specified `tillicum_demo_%j.out`, where %j is the job ID allocated.
 
@@ -166,7 +187,7 @@ Install the IPython kernel package `ipykernel` from a terminal on Tillicum:
 
 ```bash
 module load conda
-conda activate /gpfs/scrubbed/$USER/myenv
+conda activate myenv
 conda install ipykernel
 ```
 
@@ -232,7 +253,7 @@ To remove your temporary environment later, run from a terminal on Tillicum:
 
 ```bash
 module load conda
-conda env remove --prefix /gpfs/scrubbed/$USER/myenv
+conda env remove --name myenv
 ```
 
 > 📝 **NOTE:** Make sure your environment is *deactivated* before removing it.
