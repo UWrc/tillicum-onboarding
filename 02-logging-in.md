@@ -8,7 +8,7 @@ UW policy requires two-factor authentication (2FA) for all UW services, includin
 
 Before you begin, please ensure you have 2FA configured:
 
-[<ins>**UW 2FA setup page →**</ins>](https://identity.uw.edu/2fa/)
+[<ins>**UW 2FA setup page**</ins>](https://identity.uw.edu/2fa/)
 
 You need 2FA to log onto any UW-IT Research Computing cluster.
 

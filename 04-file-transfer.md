@@ -38,7 +38,12 @@ Globus provides:
 
 As of Fall 2025, Tillicum is available as a Globus collection for data transfer. Globus is available on Hyak Klone, Kopah, and UW OneDrive, allowing for seamless and high-speed data transfers to and from Tillicum.
 
-### Getting Started
+## Sharing not Enabled
+This service is still new to our environment, and we’re actively working to understand how Globus integrates with our current and future security posture. As a result, Globus public sharing is not yet enabled on `tillicum`, but we’ll provide updates as we continue evaluating and expanding its capabilities.
+
+Globus public sharing is available with [**<ins>Kopah S3 storage</ins>**](https://hyak.uw.edu/docs/storage/gui#globus), which we recommend as a compliment for your research storage portfolio if you anticipate reuiring regular sharing and collaboration.
+
+## Getting Started
 
 1. Go to **<ins>https://www.globus.org</ins>** and Log In using University of Washington as your organization.
 
@@ -49,15 +54,19 @@ As of Fall 2025, Tillicum is available as a Globus collection for data transfer.
 
 ![Screenshot showing how to search for the Tillicum endpoint.](/img/find_collection.png 'tillicum endpoint')
 
-Bookmark this collection so you can easily access it later.
+4. Bookmark this collection so you can easily access it later.
 
-The root directory `/` will be the default path when you connect.
+![Screenshot showing how to bookmark the Tillicum endpoint.](/img/bookmark.png 'bookmark')
 
-Navigate to your working directory by selecting `/gpfs/` by double clicking it, then selecting `scubbed/`, then your working directory, which should be you UWNetID, and then the git hub repository directory `tillicum-onboarding/`. 
+The directory `/gpfs` will be the default path when you connect.
+
+5. Navigate to your working directory by selecting `/gpfs/` by double clicking it, then selecting `scubbed/`, then your working directory, which should be you UWNetID, and then the git hub repository directory `tillicum-onboarding/`. 
+
+![Screenshot showing the git hub repository directory and the Tillicum path on Globus.](/img/globus_path.png 'path')
 
 This navigation can also be done by typing the path into the Path field, `/gpfs/scrubbed/UWNetID/tillicum-onboarding` after replacing the word UWNetID with your UW NetID. 
 
-### Set Up Your Local Endpoint
+## Set Up Your Local Endpoint
 
 To transfer data between your computer and Tillicum, you’ll need to install Globus Connect Personal:
 
@@ -67,6 +76,8 @@ To transfer data between your computer and Tillicum, you’ll need to install Gl
 
 ![Screenshot showing the result of setting up Globus Connect Personal Properly.](/img/gcp_endpoint.png 'personal endpoint')
 
+4. Bookmark your the collection representing your Globus Connect Personal for quick access later. 
+
 ## Practice Transfers
 
 Globus has a two-pane view option which can allow you to see two collections in the same window and perform transfers between them. We’ll use the files in this training repository to practice moving data both ways.
@@ -75,18 +86,32 @@ Globus has a two-pane view option which can allow you to see two collections in 
 2. In the other panel, open your personal endpoint (your local computer).
 
 #### Try:
-1. Transferring a file from **Tillicum → Local**
-2. Transferring a file from **Local → Tillicum**
+1. Transferring a file from **Tillicum → Local**. The image below shows the two pane view with Tillicum on the right and your local collection on the left. Select one of the files from the `tillicum-onboarding` repository to transfer and click start. You will see a green status box and detailed transfer steps can be viewed. A email will be sent to you when the transfer is completed. 
+
+![Screenshot showing the 2-pane view set up with local and Tillicum collections, the button to start the transfer, the transfer status box, and the checkbox of file selected to transfer.](/img/transfer_to_local.png 'transfer')
+
+2. Transferring a file from **Local → Tillicum**. Repeat the same steps but in the opposite direction. **Uncheck the file on the Tillicum side**, this is required to send files the other way. On the Local side, check the box next to any file and click start to begin the transfer to Tillicum. 
+
+![Screenshot showing the 2-pane view set up with local and Tillicum collections, the button to start the transfer, the transfer status box, and the checkbox of file selected to transfer.](/img/transfer_from_local.png 'transfer again')
 
 Globus will display progress in real time, and you’ll receive an email once the transfer is complete.
 
 ## OneDrive Connector (coming soon)
 
-We’re excited to announce a OneDrive connector for Globus, allowing you to move files directly between OneDrive and Tillicum.
+We’re excited to announce our Microsoft OneDrive connector for Globus, allowing you to move files directly between OneDrive and Tillicum.
+
+💡 Did you know? UW community members receive 5 TB of storage on OneDrive as part of Microsoft 365. [**<ins>Learn more here.</ins>**](https://uwconnect.uw.edu/it?id=kb_article_view&sysparm_article=KB0034422)
+
+**As of 10/9/2025, this feature is not yet in service.**
+
+However, it will function the same way. Search for **UW OneDrive** and bookmark it for easy access.
+
+![Screenshot showing the Uw OneDrive endpoint in Globus.](/img/onedrive_globus.png 'onedrive')
+
+![Screenshot showing 2-pane view set up with OneDrive and Tillicum collections, the button to start the transfer, and the checkbox of file selected to transfer.](/img/onedrive_transfer.png 'onedrive')
 
 Stay tuned for updates as this feature is finalized.
 
-💡 Did you know? UW community members receive 5 TB of storage on OneDrive as part of Microsoft 365. [**<ins>Learn more here.</ins>**](https://uwconnect.uw.edu/it?id=kb_article_view&sysparm_article=KB0034422)
 
 ## Learn More
 
