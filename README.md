@@ -40,7 +40,7 @@ Each topic in this tutorial is contained in its own Markdown file for easy navig
 
 ## Introduction video
 
-A link to the October 10, 2025 workshop intro video will be added here when available.
+Link to introduction video (recorded on October 10), which reviews the materials and concepts: https://youtu.be/aiMAre1GS3U
 
 ## Feedback
 
