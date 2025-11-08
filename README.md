@@ -3,9 +3,6 @@
 Welcome to the Tillicum Onboarding Tutorial — a guided introduction to the Tillicum GPU cluster at the University of Washington.
 This repository provides step-by-step materials to help new users get started with Tillicum, including examples, commands, and best practices.
 
-While this content is designed to remain relevant for all future users, it was originally developed for the Tillicum Onboarding and Training Workshop delivered live on Friday, October 10, 2025, 10:00 AM–12:00 PM in Seattle, Washington.
-An introduction video from that workshop will be added here when available.
-
 ## Overview
 
 Tillicum is a GPU-accelerated research computing cluster supporting AI, data science, and HPC workloads.
