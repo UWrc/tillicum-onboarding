@@ -183,10 +183,10 @@ ls
 
 We will use `loop_script.sh` in the next sections to demonstrate executing commands with Slurm job scheduler. This script is a proxy for scripts or commands you might use. **Our main goal is to prepare you to adapt the Slurm commands for your research computing projects on Tillicum.**
 
-`loop_script.sh` will take a starting point and an ending point and count until variable i=ending point. To execute this, use `./` with the desired starting and ending values:
+`loop_script.sh` will take a starting point and an ending point and count until variable i=ending point. To execute this, use `bash` with the desired starting and ending values:
 
 ```js
-./loop_script.sh 0 1000000
+bash loop_script.sh 0 1000000
 ```
 
 The output should look like this:
@@ -198,7 +198,7 @@ Sequence complete! Iterations from 0 to 1000000.
 To see how long a job took, use the `time` command:
 
 ```js
-time ./loop_script.sh 0 1000000
+time bash loop_script.sh 0 1000000
 ```
 
 The output should look something like this:
@@ -211,7 +211,7 @@ user    0m4.071s
 sys     0m0.068s
 ```
 
-In exercise 5 below, we will execute `time ./loop_script.sh 0 1000000` again but this time as a batch job, that is executed without our supervision.
+In exercise 5 below, we will execute `time bash loop_script.sh 0 1000000` again but this time as a batch job, that is executed without our supervision.
 
 ### 4. Exit the Compute Node
 
@@ -243,7 +243,7 @@ The first few lines of `loop_job.slurm` should look like this:
 #SBATCH --time=5:00
 #SBATCH -o %x_%j.out
 
-time ./loop_script.sh 0 1000000
+time bash loop_script.sh 0 1000000
 ```
 
 Slurm job scripts are written in the coding language bash and as such start with `#!/bin/bash`, also known as a "shebang." This ensures that the bash shell is used to run the script. The subsequent flags starting with `#SBATCH` are options for the `sbatch` command and communicate the specifications of the job that is being requested. Notice how the flags are reminiscent of the `salloc` command flags.
@@ -288,7 +288,7 @@ nano loop_job.slurm
 Edit the command to be
 
 ```bash
-time ./loop_script.sh 0 100000000
+time bash loop_script.sh 0 100000000
 ```
 Exit the nano text editor with ctrl+x. The command to submit batch jobs is `sbatch`. Submit the job using `sbatch`:
 
