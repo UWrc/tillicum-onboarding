@@ -96,22 +96,16 @@ Globus has a two-pane view option which can allow you to see two collections in 
 
 Globus will display progress in real time, and you’ll receive an email once the transfer is complete.
 
-## OneDrive Connector (coming soon)
-
+## OneDrive Connector 
 We’re excited to announce our Microsoft OneDrive connector for Globus, allowing you to move files directly between OneDrive and Tillicum.
 
 💡 Did you know? UW community members receive 5 TB of storage on OneDrive as part of Microsoft 365. [**<ins>Learn more here.</ins>**](https://uwconnect.uw.edu/it?id=kb_article_view&sysparm_article=KB0034422)
 
-**As of 10/9/2025, this feature is not yet in service.**
-
-However, it will function the same way. Search for **UW OneDrive** and bookmark it for easy access.
+Search for **UW OneDrive** and bookmark it for easy access.
 
 ![Screenshot showing the Uw OneDrive endpoint in Globus.](/img/onedrive_globus.png 'onedrive')
 
 ![Screenshot showing 2-pane view set up with OneDrive and Tillicum collections, the button to start the transfer, and the checkbox of file selected to transfer.](/img/onedrive_transfer.png 'onedrive')
-
-Stay tuned for updates as this feature is finalized.
-
 
 ## Learn More
 
