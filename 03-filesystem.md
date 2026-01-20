@@ -44,7 +44,7 @@ Here’s a quick overview of Tillicum storage policies:
 
 Let's review key storage directories on Tillicum and practice commands.
 
-### Your Home Directory
+### 1. Your Home Directory
 
 Your Home directory is your default location when logging into Tillicum. It’s located at:
 
