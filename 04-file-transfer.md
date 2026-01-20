@@ -41,7 +41,7 @@ As of Fall 2025, Tillicum is available as a Globus collection for data transfer.
 ## Sharing not Enabled
 This service is still new to our environment, and we’re actively working to understand how Globus integrates with our current and future security posture. As a result, Globus public sharing is not yet enabled on `tillicum`, but we’ll provide updates as we continue evaluating and expanding its capabilities.
 
-Globus public sharing is available with [**<ins>Kopah S3 storage</ins>**](https://hyak.uw.edu/docs/storage/gui#globus), which we recommend as a compliment for your research storage portfolio if you anticipate reuiring regular sharing and collaboration.
+Globus public sharing is available with [**<ins>Kopah S3 storage</ins>**](https://hyak.uw.edu/docs/storage/gui#globus), which we recommend as a compliment for your research storage portfolio if you anticipate regular external sharing and collaboration.
 
 ## Getting Started
 
